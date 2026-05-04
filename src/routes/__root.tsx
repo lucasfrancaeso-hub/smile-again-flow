@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "SC Dental - Sorriso Catarinense" },
+      { name: "description", content: "Landing page for dental clinic to capture leads for implant and prosthesis treatments." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "SC Dental - Sorriso Catarinense" },
+      { property: "og:description", content: "Landing page for dental clinic to capture leads for implant and prosthesis treatments." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SC Dental - Sorriso Catarinense" },
+      { name: "twitter:description", content: "Landing page for dental clinic to capture leads for implant and prosthesis treatments." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/mcfZiHaAeSgCZxgsn6hVcnvVdJl1/social-images/social-1777903254094-563876116_17897311767312117_8020761123816045465_n.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/mcfZiHaAeSgCZxgsn6hVcnvVdJl1/social-images/social-1777903254094-563876116_17897311767312117_8020761123816045465_n.webp" },
     ],
     links: [
       {
