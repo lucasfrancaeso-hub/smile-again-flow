@@ -1,5 +1,6 @@
 import { Award, GraduationCap, Users } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { IMAGES } from "@/config/images";
 
 const stats = [
   { icon: GraduationCap, value: "+20", label: "anos de experiência" },
@@ -13,15 +14,24 @@ export function Authority() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[1fr_1.2fr]">
         <div className="relative">
           <div className="aspect-[4/5] overflow-hidden rounded-3xl bg-gradient-hero shadow-elegant">
-            <div className="flex h-full flex-col items-center justify-center p-10 text-center text-primary-foreground">
-              <div className="flex h-28 w-28 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm">
-                <span className="font-serif text-4xl">DO</span>
+            {IMAGES.drOrnei ? (
+              <img
+                src={IMAGES.drOrnei}
+                alt="Dr. Ornei, especialista em implantes dentários"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <div className="flex h-full flex-col items-center justify-center p-10 text-center text-primary-foreground">
+                <div className="flex h-28 w-28 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm">
+                  <span className="font-serif text-4xl">DO</span>
+                </div>
+                <p className="mt-6 font-serif text-2xl">Dr. Ornei</p>
+                <p className="text-sm text-white/70">
+                  [ Espaço reservado para foto profissional ]
+                </p>
               </div>
-              <p className="mt-6 font-serif text-2xl">Dr. Ornei</p>
-              <p className="text-sm text-white/70">
-                [ Espaço reservado para foto profissional ]
-              </p>
-            </div>
+            )}
           </div>
         </div>
 
