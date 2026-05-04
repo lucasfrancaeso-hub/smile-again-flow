@@ -22,15 +22,15 @@
 
 export const IMAGES = {
   // 🏠 Foto principal do topo do site (paciente sorrindo, antes/depois, etc)
-  hero: "",
+  hero: "[https://drive.google.com/uc?export=view&id=14pru4P7EH63Njp8Jkdt8zdeHtB3bXm1I]",
 
   // 👨‍⚕️ Foto do Dr. Ornei (profissional, jaleco)
-  drOrnei: "",
+  drOrnei: "[https://drive.google.com/uc?export=view&id=1Vxrxtj1HTiZeC_rTwBNmDRLoLRKRxQ-4]",
 
   // 😁 Casos clínicos (antes e depois) — até 3 casos
   casos: [
-    { antes: "", depois: "" },
-    { antes: "", depois: "" },
-    { antes: "", depois: "" },
+    { antes: "[https://drive.google.com/uc?export=view&id=16fEffJDJ8-T8ycuHGpoliFan5NAFQrTb]", depois: "[https://drive.google.com/uc?export=view&id=1QS8Am1tA2SPwrDgvMZI6XlhB5rO_pvxv]" },
+    { antes: "[https://drive.google.com/uc?export=view&id=1IYmiAcfSJnbouQNnauUWo3U4drkfgKAL]", depois: "[https://drive.google.com/uc?export=view&id=1Df9wDikcmh4xSL0EodZLwIQrEFXjDvAH]" },
+    { antes: "[https://drive.google.com/uc?export=view&id=1cLHJtsar1cRqvimfnEYnFTpNChYwt8XX]", depois: "[https://drive.google.com/uc?export=view&id=1paFiFoFr_YkHgxOZFaCTg3rDzPFu6rEv]" },
   ],
 };
