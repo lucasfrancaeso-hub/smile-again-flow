@@ -1,5 +1,6 @@
 import { Check, ShieldCheck, Sparkles, Smile } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { IMAGES } from "@/config/images";
 
 export function Hero() {
   return (
@@ -56,14 +57,25 @@ export function Hero() {
         {/* Visual placeholder */}
         <div className="relative animate-float-up [animation-delay:120ms]">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl border border-white/15 bg-white/5 shadow-elegant backdrop-blur-sm">
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-8 text-center">
-              <Smile className="h-20 w-20 text-[var(--brand-soft)]" strokeWidth={1.4} />
-              <p className="font-serif text-2xl text-white">Seu novo sorriso</p>
-              <p className="text-sm text-white/70">
-                [ Espaço reservado para foto real do paciente / antes e depois ]
-              </p>
-            </div>
+            {IMAGES.hero ? (
+              <img
+                src={IMAGES.hero}
+                alt="Paciente sorrindo após tratamento de implantes na SC Dental"
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="eager"
+              />
+            ) : (
+              <>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 p-8 text-center">
+                  <Smile className="h-20 w-20 text-[var(--brand-soft)]" strokeWidth={1.4} />
+                  <p className="font-serif text-2xl text-white">Seu novo sorriso</p>
+                  <p className="text-sm text-white/70">
+                    [ Espaço reservado para foto real do paciente / antes e depois ]
+                  </p>
+                </div>
+              </>
+            )}
           </div>
 
           <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-background p-4 shadow-elegant md:block">

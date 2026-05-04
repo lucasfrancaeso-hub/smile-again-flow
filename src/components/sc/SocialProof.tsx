@@ -1,4 +1,5 @@
 import { Quote, Star } from "lucide-react";
+import { IMAGES } from "@/config/images";
 
 const testimonials = [
   {
@@ -30,20 +31,38 @@ export function SocialProof() {
 
         {/* Antes e depois placeholder */}
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {[1, 2, 3].map((i) => (
+          {IMAGES.casos.map((caso, idx) => (
             <div
-              key={i}
+              key={idx}
               className="overflow-hidden rounded-3xl bg-card shadow-soft transition-smooth hover:-translate-y-1 hover:shadow-elegant"
             >
               <div className="grid grid-cols-2">
-                <div className="aspect-square bg-gradient-to-br from-muted to-[var(--brand-tint)] p-4 text-center text-xs text-muted-foreground flex flex-col items-center justify-center">
-                  <span className="font-semibold text-primary">ANTES</span>
-                  <span className="mt-1">[ foto real ]</span>
-                </div>
-                <div className="aspect-square bg-gradient-hero p-4 text-center text-xs text-white/80 flex flex-col items-center justify-center">
-                  <span className="font-semibold text-white">DEPOIS</span>
-                  <span className="mt-1">[ foto real ]</span>
-                </div>
+                {caso.antes ? (
+                  <img
+                    src={caso.antes}
+                    alt={`Caso clínico ${idx + 1} - antes do tratamento`}
+                    className="aspect-square h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="aspect-square bg-gradient-to-br from-muted to-[var(--brand-tint)] p-4 text-center text-xs text-muted-foreground flex flex-col items-center justify-center">
+                    <span className="font-semibold text-primary">ANTES</span>
+                    <span className="mt-1">[ foto real ]</span>
+                  </div>
+                )}
+                {caso.depois ? (
+                  <img
+                    src={caso.depois}
+                    alt={`Caso clínico ${idx + 1} - depois do tratamento`}
+                    className="aspect-square h-full w-full object-cover"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="aspect-square bg-gradient-hero p-4 text-center text-xs text-white/80 flex flex-col items-center justify-center">
+                    <span className="font-semibold text-white">DEPOIS</span>
+                    <span className="mt-1">[ foto real ]</span>
+                  </div>
+                )}
               </div>
               <div className="p-5">
                 <div className="flex gap-0.5 text-accent">
@@ -51,7 +70,7 @@ export function SocialProof() {
                     <Star key={idx} className="h-4 w-4 fill-current" />
                   ))}
                 </div>
-                <p className="mt-2 text-sm text-muted-foreground">Caso clínico {i}</p>
+                <p className="mt-2 text-sm text-muted-foreground">Caso clínico {idx + 1}</p>
               </div>
             </div>
           ))}
