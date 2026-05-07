@@ -22,7 +22,7 @@
 
 export const IMAGES = {
   // 🏠 Foto principal do topo do site (paciente sorrindo, antes/depois, etc)
-  hero: "/imagens/logo.jpg",
+  hero: "/imagens/hero.jpg",
 
   // 👨‍⚕️ Foto do Dr. Ornei (profissional, jaleco)
   drOrnei: "/imagens/drornei.png",
