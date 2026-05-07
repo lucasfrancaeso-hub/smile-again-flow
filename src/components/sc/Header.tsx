@@ -6,9 +6,11 @@ export function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-border/60">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
         <a href="#hero" className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-hero text-primary-foreground font-serif text-lg">
-            SC
-          </div>
+          <img
+            src="/imagens/logo.jpg"
+            alt="Logo SC Dental"
+            className="h-10 w-10 rounded-xl object-cover"
+          />
           <div className="leading-tight">
             <div className="font-serif text-lg text-primary">SC Dental</div>
             <div className="text-[11px] uppercase tracking-widest text-muted-foreground">
