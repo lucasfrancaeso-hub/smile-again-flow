@@ -25,12 +25,14 @@ export const IMAGES = {
   hero: "[https://drive.google.com/uc?export=view&id=14pru4P7EH63Njp8Jkdt8zdeHtB3bXm1I]",
 
   // 👨‍⚕️ Foto do Dr. Ornei (profissional, jaleco)
-  drOrnei: "[https://drive.google.com/uc?export=view&id=1Vxrxtj1HTiZeC_rTwBNmDRLoLRKRxQ-4]",
+  drOrnei: "/imagens/drornei.png",
 
   // 😁 Casos clínicos (antes e depois) — até 3 casos
+  // Se a sua foto JÁ contém o antes e depois juntos (lado a lado),
+  // use o campo "combo" e deixe antes/depois vazios.
   casos: [
-    { antes: "[https://drive.google.com/uc?export=view&id=16fEffJDJ8-T8ycuHGpoliFan5NAFQrTb]", depois: "[https://drive.google.com/uc?export=view&id=1QS8Am1tA2SPwrDgvMZI6XlhB5rO_pvxv]" },
-    { antes: "[https://drive.google.com/uc?export=view&id=1IYmiAcfSJnbouQNnauUWo3U4drkfgKAL]", depois: "[https://drive.google.com/uc?export=view&id=1Df9wDikcmh4xSL0EodZLwIQrEFXjDvAH]" },
-    { antes: "[https://drive.google.com/uc?export=view&id=1cLHJtsar1cRqvimfnEYnFTpNChYwt8XX]", depois: "[https://drive.google.com/uc?export=view&id=1paFiFoFr_YkHgxOZFaCTg3rDzPFu6rEv]" },
+    { antes: "", depois: "", combo: "/imagens/antesedepois1.png" },
+    { antes: "", depois: "", combo: "/imagens/antesedepois2.png" },
+    { antes: "", depois: "", combo: "/imagens/antesedepois3.png" },
   ],
 };

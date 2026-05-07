@@ -31,11 +31,19 @@ export function SocialProof() {
 
         {/* Antes e depois placeholder */}
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {IMAGES.casos.map((caso, idx) => (
+          {IMAGES.casos.map((caso: any, idx) => (
             <div
               key={idx}
               className="overflow-hidden rounded-3xl bg-card shadow-soft transition-smooth hover:-translate-y-1 hover:shadow-elegant"
             >
+              {caso.combo ? (
+                <img
+                  src={caso.combo}
+                  alt={`Caso clínico ${idx + 1} - antes e depois do tratamento`}
+                  className="aspect-[2/1] w-full object-cover"
+                  loading="lazy"
+                />
+              ) : (
               <div className="grid grid-cols-2">
                 {caso.antes ? (
                   <img
@@ -64,6 +72,7 @@ export function SocialProof() {
                   </div>
                 )}
               </div>
+              )}
               <div className="p-5">
                 <div className="flex gap-0.5 text-accent">
                   {Array.from({ length: 5 }).map((_, idx) => (
