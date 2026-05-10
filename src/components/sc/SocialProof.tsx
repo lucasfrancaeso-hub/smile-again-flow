@@ -37,11 +37,11 @@ export function SocialProof() {
               className="overflow-hidden rounded-3xl bg-card shadow-soft transition-smooth hover:-translate-y-1 hover:shadow-elegant"
             >
               {caso.combo ? (
-                <div className="flex w-full items-center justify-center bg-[var(--brand-tint)]">
+                <div className="flex aspect-[4/3] w-full items-center justify-center bg-[var(--brand-tint)]">
                   <img
                     src={caso.combo}
                     alt={`Caso clínico ${idx + 1} - antes e depois do tratamento`}
-                    className="h-auto w-full object-contain"
+                    className="h-full w-full object-contain"
                     loading="lazy"
                   />
                 </div>
