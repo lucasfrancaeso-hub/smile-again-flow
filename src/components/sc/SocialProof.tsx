@@ -37,12 +37,14 @@ export function SocialProof() {
               className="overflow-hidden rounded-3xl bg-card shadow-soft transition-smooth hover:-translate-y-1 hover:shadow-elegant"
             >
               {caso.combo ? (
-                <img
-                  src={caso.combo}
-                  alt={`Caso clínico ${idx + 1} - antes e depois do tratamento`}
-                  className="aspect-[2/1] w-full object-cover"
-                  loading="lazy"
-                />
+                <div className="flex w-full items-center justify-center bg-[var(--brand-tint)]">
+                  <img
+                    src={caso.combo}
+                    alt={`Caso clínico ${idx + 1} - antes e depois do tratamento`}
+                    className="h-auto w-full object-contain"
+                    loading="lazy"
+                  />
+                </div>
               ) : (
               <div className="grid grid-cols-2">
                 {caso.antes ? (
