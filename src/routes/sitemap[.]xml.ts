@@ -9,7 +9,7 @@ interface SitemapEntry {
   priority?: string;
 }
 
-export const Route = createFileRoute("/sitemap[.]xml")({
+export const Route = createFileRoute("/sitemap.xml")({
   loader: async () => {
     const entries: SitemapEntry[] = [
       { path: "/", changefreq: "weekly", priority: "1.0" }
