@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export const WHATSAPP_NUMBER = "5547933897398";
+export const WHATSAPP_NUMBER = "5547992055840";
 export const WHATSAPP_DEFAULT_MSG =
   "Olá! Vim pelo site da SC Dental e gostaria de saber se posso fazer o tratamento com implantes.";
 

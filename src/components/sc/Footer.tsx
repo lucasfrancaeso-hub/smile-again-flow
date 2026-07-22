@@ -23,7 +23,7 @@ export function Footer() {
           <ul className="mt-3 space-y-2.5">
             <li className="flex items-start gap-2.5">
               <Phone className="mt-0.5 h-4 w-4 text-[var(--brand-soft)]" />
-              (47) 93389-7398
+              (47) 99205-5840
             </li>
             <li className="flex items-start gap-2.5">
               <MessageCircle className="mt-0.5 h-4 w-4 text-[var(--brand-soft)]" />

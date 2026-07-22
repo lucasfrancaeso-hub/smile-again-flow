@@ -19,13 +19,37 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Implantes dentários fixos e prótese protocolo em Navegantes, SC. Especialista com +20 anos de experiência. Agende sua avaliação no WhatsApp.",
+          "Recupere sua autoestima com implantes dentários e prótese protocolo no centro de Navegantes, SC. Dr. Ornei: +20 anos de experiência. Agende sua avaliação.",
       },
-      { property: "og:title", content: "SC Dental — Volte a sorrir sem dentadura" },
+      { property: "og:title", content: "SC Dental — Volte a sorrir sem dentadura em Navegantes" },
       {
         property: "og:description",
         content:
-          "Tratamento com implantes fixos por especialista com +20 anos de experiência em Navegantes, SC.",
+          "Tratamento especializado em implantes fixos e prótese protocolo por especialista com +20 anos de experiência em Navegantes, SC.",
+      },
+      { property: "og:url", content: "https://scdental.lovable.app" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "https://scdental.lovable.app" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Dentist",
+          "name": "SC Dental - Sorriso Catarinense",
+          "image": "https://scdental.lovable.app/imagens/logo.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Centro",
+            "addressLocality": "Navegantes",
+            "addressRegion": "SC",
+            "addressCountry": "BR"
+          },
+          "telephone": "+5547992055840",
+          "url": "https://scdental.lovable.app"
+        }),
       },
     ],
   }),

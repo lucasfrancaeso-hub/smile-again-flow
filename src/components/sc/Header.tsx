@@ -20,7 +20,7 @@ export function Header() {
         </a>
         <div className="hidden items-center gap-2 text-sm text-muted-foreground md:flex">
           <Phone className="h-4 w-4 text-accent" />
-          (47) 93389-7398
+          (47) 99205-5840
         </div>
         <WhatsAppButton label="Agendar avaliação" size="default" />
       </div>
